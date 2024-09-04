@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.background {
+    width: 93%;
+    height: 400px;
+    background-color: #43BDEE;
+    border-radius: 0px 0px 90px 0px;
+    margin-top: -80px;
+    margin-left: -80px;
+}
+
+.head {
+    padding: 0px 50px;
+    margin-top: -18pc;
+}
+
+.head-text {
+    display: flex;
+    align-items: center;
+}
+
+.head-text h1 {
+    color: #003A51;
+    font-size: 50px;
+}
+
+.button {
+    width: 200px;
+    height: 45px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    background-color: #43BDEE;
+    color: #003A51;
+    position: absolute;
+    right: 0;
+    margin: 0px 17pc;
+    cursor: pointer;
+}
+
+.section {
+    padding: 20px;
+    display: flex;
+    margin-top: 3pc;
+}
+
+.des {
+    margin: 0;
+    padding: 0px 30px;
+}
+
+.des h3 {
+    font-size: 25px;
+    margin: 10px 0px;
+    color: #003A51;
+}
+
+.des h7 {
+    font-size: 18px;
+    color: #003A51;
+}
+
+.des button {
+    background: none;
+    border: none;
+    text-decoration: none;
+    padding: 60px 0px;
+    margin-right: 40px;
+    font-size: 30px;
+}
+
+.opt-plant {
+    padding: 0;
+    margin-top: 0;
+    display: flex;
+}
+
+.opt {
+    width: 330px;
+    height: 300px;
+    background-color: #2897C3;
+    margin: 0px 20px;
+    border-radius: 0px 0px 50px 0px;
+}
+
+.line-opt {
+    border: 1px solid #1083B0;
+}
+
+.opt div {
+    padding: 0px 25px;
+    display: flex;
+}
+
+.opt h3 {
+    color: #003A51;
+}
+
+.footer{
+    padding: 40px;
+    margin: auto;
+}
+
+.card {
+    width: 25%;
+    padding: 18px;
+    background-color: #E7E7E7;
+    margin: auto;
+    margin-top: 125px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.card img {
+    width: 40px;
+    background-color: #E7E7E7;
+}
+
+.card button {
+    border: none;
+    background-color: #E7E7E7;
+    margin: 0px 30px;
+}
+
+.dir-page hr{
+    margin-left: -17px;
+    margin-top: 10px;
+    border: 2px solid #43BDEE;
+    border-radius: 10px 10px 0px 0px;
+    width: 70px;
+    background-color: #43BDEE;
+    height: 5px;
+    position: absolute;
+}
