@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontrol Panel Spicebot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F4F4F4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            width: 100%;
+            height: 48.5pc;
+            background-color: #FFFFFF;
+        }
+
+        header {
+            background-color: #56C5FF;
+            width: 80%;
+            height: 200px;
+            padding: 30px;
+            color: black;
+            border-radius: 0px 0px 50px 0px;
+        }
+
+        .top-text {
+            padding: 0px 20px;
+            margin: 0;
+        }
+
+        .content {
+            display: flex;
+            margin-bottom: 10px;
+            padding: 10px 29px;
+            margin-top: -7%;
+            position: relative;
+            margin-bottom: 0;
+        }
+
+        .box {
+            background-color: #FFAB40;
+            padding: 20px;
+            border-radius: 0px 0px 50px 0px;
+            width: 280px;
+            text-align: center;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 0px 20px;
+        }
+
+        .box h2 {
+            margin-top: 0;
+        }
+
+        .button {
+            display: block;
+            background-color: white;
+            color: black;
+            padding: 10px;
+            margin: 10px 0;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #ddd;
+        }
+
+        .schedules {
+            text-align: left;
+            color: black;
+        }
+
+        .schedules .time {
+            font-size: 2em;
+            color: #333;
+        }
+
+        .quick-access {
+            position: relative;
+            padding: 10px 50px;
+        }
+
+        .quick-access h3 {
+            margin: 30px 0px;
+            margin-bottom: 35px;
+        }
+
+        .quick-button {
+            border: 1px solid black;
+            border-radius: 15px;
+            background-color: none;
+            padding: 17px 50px;
+            text-decoration: none;
+            margin-right: 30px;
+            color: black;
+        }
+
+        .card {
+            width: 25%;
+            padding: 18px;
+            background-color: #E7E7E7;
+            margin: auto;
+            margin-top: 125px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+        }
+
+        .card img {
+            width: 40px;
+            background-color: #E7E7E7;
+        }
+
+        .card button {
+            border: none;
+            background-color: #E7E7E7;
+            margin: 0px 30px;
+        }
+
+        .dir-page hr {
+            margin-left: -17px;
+            margin-top: 5px;
+            border: 2px solid #43BDEE;
+            border-radius: 10px 10px 0px 0px;
+            width: 70px;
+            background-color: #43BDEE;
+            height: 10px;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="top-text">
+                <h3>Selamat pagi, User</h3>
+                <h1>Kontrol Panel Spicebot</h1>
+            </div>
+        </header>
+
+        <div class="content">
+            <div class="aksi box">
+                <h2>Aksi</h2>
+                <a href="toggle_lights.html" class="button">Toggle Lights</a>
+                <a href="toggle_water.html" class="button">Toggle Water</a>
+            </div>
+
+            <div class="kalibrasi box">
+                <h2>Kalibrasi</h2>
+                <a href="kalibrasi_axis_x.html" class="button">Kalibrasi Axis X</a>
+                <a href="kalibrasi_axis_y.html" class="button">Kalibrasi Axis Y</a>
+            </div>
+
+            <div class="schedules box">
+                <h2>Schedules</h2>
+                <p>Hari ini, 8 Feb</p>
+                <p class="time">09:50</p>
+                <p class="description">12 menit lagi<br>Menyiram seluruh tanaman</p>
+            </div>
+        </div>
+
+        <div class="quick-access">
+            <h3>Quick Access Menu</h3>
+            <a href="connected_devices.html" class="quick-button">Connected Devices</a>
+            <a href="camera_streaming.html" class="quick-button">Camera Streaming</a>
+            <a href="sensors.html" class="quick-button">Sensors</a>
+            <a href="manual_control.html" class="quick-button">Manual Control</a>
+        </div>
+        <div class="card">
+            <button class="dir-page"><img src="/img/leaf.png" alt="">
+                <hr></button>
+            <button><img src="/img/home (5).png (5).png" alt=""></button>
+            <button><img src="/img/setting.png" alt=""></button>
+        </div>
+    </div>
+</body>
+
+</html>
