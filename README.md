@@ -1,2 +1,3 @@
 # SpiceBot-Website
-This repository was our documentary for SpiceBot Web
+
+This repository is our documentary for SpiceBot Web
