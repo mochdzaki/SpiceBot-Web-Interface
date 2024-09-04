@@ -35,6 +35,12 @@ body {
     position: relative;
     margin-left: 35pc;
     text-decoration: none;
+    transition: background-color 0.5s ease;
+}
+
+.button:hover{
+    background-color: #003A51;
+    color: white;
 }
 
 .section {
@@ -80,6 +86,7 @@ body {
     background-color: #2897C3;
     margin: 0px 20px;
     border-radius: 0px 0px 50px 0px;
+    box-shadow: 0px 2px 6px #003A51;
 }
 
 .line-opt {
@@ -102,33 +109,65 @@ body {
 
 .card {
     width: 25%;
-    padding: 18px;
+    padding: 10px;
     background-color: #E7E7E7;
-    margin: auto;
-    margin-top: 125px;
+    position: absolute;
+    bottom: 0;
+    margin: 0% 35%;
     border-radius: 50px;
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
+}
+
+.btn {
+    position: relative;
 }
 
 .card img {
     width: 40px;
     background-color: #E7E7E7;
+    padding: 0px 20px;
+    margin-bottom: 8px;
 }
 
 .card button {
     border: none;
     background-color: #E7E7E7;
-    margin: 0px 30px;
 }
 
-.dir-page hr{
-    margin-left: -17px;
-    margin-top: 10px;
+.sign-btn{
     border: 2px solid #43BDEE;
     border-radius: 10px 10px 0px 0px;
     width: 70px;
     background-color: #43BDEE;
     height: 5px;
-    position: absolute;
+    position: relative;
+    margin: 0;
+    margin-bottom: -10px;
+}
+
+.hover-btn {
+    background-color: #E7E7E7;
+    border: 2px solid #E7E7E7;
+    border-radius: 10px 10px 0px 0px;
+    width: 70px;
+    height: 5px;
+    position: relative;
+    margin: 0;
+    margin-bottom: -10px;
+    opacity: 0;
+    transition: opacity 0.7s ease;
+}
+
+.btn-2 a:hover + .hover-btn{
+    background-color: #43BDEE;
+    border-color: #43BDEE;
+    opacity: 1;
+}
+
+.btn-3 a:hover + .hover-btn{
+    background-color: #43BDEE;
+    border-color: #43BDEE;
+    opacity: 1;
 }
