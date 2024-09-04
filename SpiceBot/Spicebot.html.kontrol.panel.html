@@ -57,21 +57,24 @@
 
         .box h2 {
             margin-top: 0;
+            text-align: start;
+            margin-left: 20px;
         }
 
         .button {
-            display: block;
-            background-color: white;
+            display: flex;
+            background-color: #FFAB40;
             color: black;
             padding: 10px;
-            margin: 10px 0;
+            margin: 10px 20px;
             text-decoration: none;
             border-radius: 5px;
             transition: background-color 0.3s ease;
+            border: 2px solid black;
         }
 
         .button:hover {
-            background-color: #ddd;
+            background-color: #fdc882;
         }
 
         .schedules {
@@ -82,6 +85,17 @@
         .schedules .time {
             font-size: 2em;
             color: #333;
+        }
+
+        .schedules p{
+            padding: 0px 20px;
+        }
+
+        .schedules hr{
+            border: 2px solid #FFD189;
+            background-color: #FFD189;
+            width: 113%;
+            margin-left: -20px;
         }
 
         .quick-access {
@@ -163,6 +177,7 @@
 
             <div class="schedules box">
                 <h2>Schedules</h2>
+                <hr>
                 <p>Hari ini, 8 Feb</p>
                 <p class="time">09:50</p>
                 <p class="description">12 menit lagi<br>Menyiram seluruh tanaman</p>
