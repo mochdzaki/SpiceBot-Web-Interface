@@ -56,9 +56,11 @@
         }
 
         .box h2 {
+            margin: 0;
             margin-top: 0;
             text-align: start;
             margin-left: 20px;
+            padding: 10px 0px;
         }
 
         .button {
@@ -98,6 +100,25 @@
             margin-left: -20px;
         }
 
+        .schedules-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        .schedules-btn h2{
+            margin: 0;
+        }
+
+        .schedules-btn a{
+            text-decoration: none;
+            color: black;
+            padding: 0px 10px;
+            margin-left: 100px;
+        }
+
         .quick-access {
             position: relative;
             padding: 10px 50px;
@@ -123,7 +144,7 @@
             padding: 18px;
             background-color: #E7E7E7;
             margin: auto;
-            margin-top: 125px;
+            margin-top: 100px;
             border-radius: 50px;
             display: flex;
             align-items: center;
@@ -176,7 +197,10 @@
             </div>
 
             <div class="schedules box">
-                <h2>Schedules</h2>
+                <div class="schedules-btn">
+                    <h2>Schedules</h2>
+                    <a href="Schedules-page-SpiceBot.html">></a>
+                </div>
                 <hr>
                 <p>Hari ini, 8 Feb</p>
                 <p class="time">09:50</p>
@@ -192,10 +216,10 @@
             <a href="manual_control.html" class="quick-button">Manual Control</a>
         </div>
         <div class="card">
-            <button class="dir-page"><img src="/img/leaf.png" alt="">
+            <button class="dir-page"><img src="../img/leaf.png" alt="">
                 <hr></button>
-            <button><img src="/img/home (5).png" alt=""></button>
-            <button><img src="/img/setting.png" alt=""></button>
+            <button><img src="../img/home (5).png" alt=""></button>
+            <button><img src="../img/setting.png" alt=""></button>
         </div>
     </div>
 </body>
