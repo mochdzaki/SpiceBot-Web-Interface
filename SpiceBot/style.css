@@ -102,11 +102,6 @@ body {
     color: #003A51;
 }
 
-.footer{
-    padding: 40px;
-    margin: auto;
-}
-
 .card {
     width: 25%;
     padding: 10px;
@@ -116,7 +111,7 @@ body {
     margin: 0% 35%;
     border-radius: 50px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 }
 

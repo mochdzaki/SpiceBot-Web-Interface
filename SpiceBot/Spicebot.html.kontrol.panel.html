@@ -89,11 +89,11 @@
             color: #333;
         }
 
-        .schedules p{
+        .schedules p {
             padding: 0px 20px;
         }
 
-        .schedules hr{
+        .schedules hr {
             border: 2px solid #FFD189;
             background-color: #FFD189;
             width: 113%;
@@ -108,11 +108,11 @@
             margin: 0;
         }
 
-        .schedules-btn h2{
+        .schedules-btn h2 {
             margin: 0;
         }
 
-        .schedules-btn a{
+        .schedules-btn a {
             text-decoration: none;
             color: black;
             padding: 0px 10px;
@@ -141,35 +141,68 @@
 
         .card {
             width: 25%;
-            padding: 18px;
+            padding: 10px;
             background-color: #E7E7E7;
-            margin: auto;
-            margin-top: 100px;
+            position: absolute;
+            bottom: 0;
+            margin: 0% 35%;
             border-radius: 50px;
             display: flex;
+            justify-content: space-evenly;
             align-items: center;
+        }
+
+        .btn {
+            position: relative;
         }
 
         .card img {
             width: 40px;
             background-color: #E7E7E7;
+            padding: 0px 20px;
+            margin-bottom: 8px;
+            margin-top: 8px;
         }
 
         .card button {
             border: none;
             background-color: #E7E7E7;
-            margin: 0px 30px;
         }
 
-        .dir-page hr {
-            margin-left: -17px;
-            margin-top: 5px;
+        .sign-btn {
             border: 2px solid #43BDEE;
             border-radius: 10px 10px 0px 0px;
             width: 70px;
             background-color: #43BDEE;
-            height: 10px;
-            position: absolute;
+            height: 5px;
+            position: relative;
+            margin: 0;
+            margin-bottom: -10px;
+        }
+
+        .hover-btn {
+            background-color: #E7E7E7;
+            border: 2px solid #E7E7E7;
+            border-radius: 10px 10px 0px 0px;
+            width: 70px;
+            height: 5px;
+            position: relative;
+            margin: 0;
+            margin-bottom: -10px;
+            opacity: 0;
+            transition: opacity 0.7s ease;
+        }
+
+        .btn-1 a:hover+.hover-btn {
+            background-color: #43BDEE;
+            border-color: #43BDEE;
+            opacity: 1;
+        }
+
+        .btn-3 a:hover+.hover-btn {
+            background-color: #43BDEE;
+            border-color: #43BDEE;
+            opacity: 1;
         }
     </style>
 </head>
@@ -178,7 +211,7 @@
     <div class="container">
         <header>
             <div class="top-text">
-                <h3>Selamat pagi, User</h3>
+                <h3>Welcome, User</h3>
                 <h1>Kontrol Panel Spicebot</h1>
             </div>
         </header>
@@ -216,10 +249,18 @@
             <a href="manual_control.html" class="quick-button">Manual Control</a>
         </div>
         <div class="card">
-            <button class="dir-page"><img src="../img/leaf.png" alt="">
-                <hr></button>
-            <button><img src="../img/home (5).png" alt=""></button>
-            <button><img src="../img/setting.png" alt=""></button>
+            <div class="btn-1">
+                <a href="Panel-tanaman-SpiceBot.html"><img src="../img/leaf.png" alt=""></a>
+                <hr class="hover-btn">
+            </div>
+            <div class="btn-2">
+                <a href=""><img src="../img/home (5).png" alt=""></a>
+                <hr class="sign-btn">
+            </div>
+            <div class="btn-3">
+                <a href=""><img src="../img/setting.png" alt=""></a>
+                <hr class="hover-btn">
+            </div>
         </div>
     </div>
 </body>
