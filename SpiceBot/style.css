@@ -105,10 +105,10 @@ body {
 .card {
     width: 25%;
     padding: 10px;
+    margin: 0px 550px;
     background-color: #E7E7E7;
     position: absolute;
     bottom: 0;
-    margin: 0% 35%;
     border-radius: 50px;
     display: flex;
     justify-content: space-around;
