@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.background {
+    width: 80%;
+    height: 200px;
+    padding: 30px;
+    background-color: #43BDEE;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0px 0px 50px 0px;
+}
+
+.title-text {
+    padding: 20px 40px;
+    position: relative;
+}
+
+.title-text h1{
+    font-size: 40px;
+    margin-left: 20px;
+}
+
+.loc-title {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.loc-title a{
+    padding: 0px 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.pic-1{
+    width: 25%;
+    height: 300px;
+    padding: 20px;
+    background-color: #D9D9D9;
+    position: relative;
+    border-radius: 30px;
+    margin-top: 70px;
+    margin-left: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.pic-1 p{
+    margin-top: 130px;
+}
