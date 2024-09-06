@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.background {
+    width: 100%;
+    height: 24.5%;
+    background-color: #43BDEE;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.title-text {
+    position: relative;
+    padding: 20px 40px;
+    color: black;
+}
+
+.title-text h1 {
+    margin: 0;
+    padding: 10px 10px;
+    font-size: 40px;
+}
+
+.title-text div {
+    display: flex;
+}
+
+.title-text a {
+    padding: 20px 20px;
+    margin: 0;
+    text-decoration: none;
+    color: black;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 55px;
+}
+
+.title img {
+    width: 4%;
+    height: 4%;
+    padding: 10px 10px;
+    margin-left: 10px;
+}
+
+.sync-btn {
+    width: 15%;
+    height: 16px;
+    padding: 10px 0px;
+    background-color: white;
+    border: 2px solid #E2E8F0;
+    align-items: center;
+    border-radius: 10px;
+    margin-left: 30px;
+}
+
+.sync-btn:hover{
+    background-color: #e1e1e1;
+    transition: background-color 0.5s ease;
+}
+
+.sync-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.sync-btn a {
+    text-decoration: none;
+    padding: 10px;
+}
+
+.sub-title {
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+.sub-title img{
+    width: 60px;
+    background-color: none;
+    transform: rotate(35deg);
+}
+
+.sub-title h5 {
+    font-size: 20px;
+    padding: 0px 15px;
+}
+
+.dev-con{
+    display: flex;
+
+}
+
+.connect-device {
+    width: 18%;
+    height: 20%;
+    border: 2px solid #E2E8F0;
+    flex-direction: column;
+    padding: 15px 20px;
+    margin: 10px 20px;
+    border-radius: 15px;
+}
+
+.connect-device p{
+    margin: 0;
+    padding: 6px 0px;
+}
