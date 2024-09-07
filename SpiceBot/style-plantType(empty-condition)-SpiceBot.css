@@ -1,0 +1,13 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.background {
+    width: 50%;
+    height: 20%;
+    background-color: #43BDEE;
+    position: absolute;
+    margin: 0;
+    top: 0;
+    left: 0;
+}
