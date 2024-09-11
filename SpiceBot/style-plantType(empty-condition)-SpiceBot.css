@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.background {
+    width: 80%;
+    height: 200px;
+    padding: 30px;
+    background-color: #43BDEE;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0px 0px 50px 0px;
+}
+
+.title-text {
+    padding: 20px 40px;
+    position: relative;
+}
+
+.title-text h1{
+    font-size: 40px;
+    margin-left: 20px;
+    margin-bottom: 80px;
+}
+
+.loc-title {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.loc-title a{
+    padding: 0px 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.plant-pic{
+    position: relative;
+    padding: 10px 60px;
+}
+
+.card {
+    width: 25%;
+    padding: 10px;
+    margin: 0px 550px;
+    background-color: #E7E7E7;
+    position: absolute;
+    bottom: 0;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btn {
+    position: relative;
+}
+
+.card img {
+    width: 40px;
+    background-color: #E7E7E7;
+    padding: 0px 20px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.card button {
+    border: none;
+    background-color: #E7E7E7;
+}
+
+.sign-btn {
+    border: 2px solid #43BDEE;
+    border-radius: 10px 10px 0px 0px;
+    width: 70px;
+    background-color: #43BDEE;
+    height: 5px;
+    position: relative;
+    margin: 0;
+    margin-bottom: -10px;
+}
+
+.hover-btn {
+    background-color: #E7E7E7;
+    border: 2px solid #E7E7E7;
+    border-radius: 10px 10px 0px 0px;
+    width: 70px;
+    height: 5px;
+    position: relative;
+    margin: 0;
+    margin-bottom: -10px;
+    opacity: 0;
+    transition: opacity 0.7s ease;
+}
+
+.btn-2 a:hover+.hover-btn {
+    background-color: #43BDEE;
+    border-color: #43BDEE;
+    opacity: 1;
+}
+
+.btn-3 a:hover+.hover-btn {
+    background-color: #43BDEE;
+    border-color: #43BDEE;
+    opacity: 1;
+}
