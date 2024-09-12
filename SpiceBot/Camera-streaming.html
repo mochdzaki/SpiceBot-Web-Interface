@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Camera Streaming</title>
+    <link rel="icon" href="../Logo/spice logo indo solar.png" type="image/x-icon">
     <style>
         * {
             margin: 0;
@@ -19,7 +21,7 @@
 
         .header {
             background-color: #43BDEE;
-            height: 120px;
+            height: 190px;
             width: 100%;
             padding: 20px;
             position: relative;
@@ -28,44 +30,47 @@
         nav {
             color: white;
             margin-bottom: 15px;
+            margin: 30px;
         }
 
         nav a {
             text-decoration: none;
-            color: white;
-            opacity: 0.9;
-        }
-
-        nav a:hover {
-            opacity: 1;
+            color: black;
+            padding: 20px;
         }
 
         nav span {
-            color: white;
-            opacity: 0.6;
+            color: black;
         }
 
         .page-title {
-            font-size: 36px;
-            color: white;
-            display: inline-block;
+            font-size: 40px;
+            color: black;
+            display: flex;
+            align-items: center;
+            margin-left: 50px;
         }
 
-        .page-title-icon {
-            font-size: 36px;
-            margin-right: 10px;
+        .page-title img {
+            width: 60px;
+            margin-right: 20px;
+        }
+
+        .title-btn {
+            display: flex;
+            align-items: center;
         }
 
         .sync-btn {
-            background-color: #2196f3;
-            color: white;
+            background-color: #2BA8DB;
+            color: black;
             border: none;
-            padding: 10px 20px;
+            padding: 0px 20px;
+            margin-left: 20px;
+            height: 50px;
             border-radius: 5px;
             cursor: pointer;
-            position: absolute;
-            right: 20px;
-            top: 40px;
+            position: relative;
             display: flex;
             align-items: center;
         }
@@ -76,7 +81,12 @@
 
         .sync-btn-icon {
             margin-right: 8px;
-            font-size: 18px;
+            display: flex;
+            align-items: center;
+        }
+
+        .sync-btn-icon img {
+            width: 30px;
         }
 
         main {
@@ -84,7 +94,7 @@
         }
 
         .camera-section {
-            margin-top: 20px;
+            margin: 20px 50px;
         }
 
         .camera-title {
@@ -105,28 +115,33 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Header with blue rectangle -->
     <div class="header">
         <nav>
-            <a href="#">Home</a> <span>&gt;</span> <a href="#">Camera Streaming</a>
+            <a href="Spicebot.html.kontrol.panel.html" style="opacity: 0.5;">Home</a> <span>&gt;</span> <a
+                href="">Camera Streaming</a>
         </nav>
-        <h1 class="page-title">
-            <span class="file:///C:/Users/A/AppData/Roaming/Microsoft/Windows/Network%20Shortcuts/CAMERA.webp">📷</span> Camera Streaming
-        </h1>
-        <button class="sync-btn">
-            <span class="sync-btn-icon">☁️</span> Connected to Cloud
-        </button>
+        <div class="title-btn">
+            <h1 class="page-title">
+                <span class="file:///C:/Users/A/AppData/Roaming/Microsoft/Windows/Network%20Shortcuts/CAMERA.webp"><img
+                        src="../img/video-camera.png" alt=""></span> Camera Streaming
+            </h1>
+            <button class="sync-btn">
+                <span class="sync-btn-icon"><img src="../img/cloud.png" alt=""></span> Connected to Cloud
+            </button>
+        </div>
     </div>
 
     <main>
         <section class="camera-section">
             <h2 class="camera-title">Check Camera Connectivity</h2>
             <div class="camera-stream">
-            
                 Camera Feed
             </div>
         </section>
     </main>
-</body>
+</body> 
+
 </html>
