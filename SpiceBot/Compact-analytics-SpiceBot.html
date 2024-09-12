@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compact Analytics SpiceBot</title>
+    <link rel="stylesheet" href="style-compact-analytics.css">
+    <link rel="icon" type="image/x-icon" href="../Logo/spice logo indo solar.png">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+</head>
+<body>
+    <div class="title">
+        <div class="nav-title">
+            <a href="" style="opacity: 0.4;">Plants</a>
+            <p>></p>
+            <a href="">Compact Analytics</a>
+        </div>
+        <h1>Welcome, User</h1>
+    </div>
+    <div class="live-chart">
+        <div class="plant-chart">
+            <div class="nav-dropdown">
+                <div class="plant-dropdown">
+                    <button class="dropdown-btn">    
+                        <span>Select Plants</span>
+                        <span class="arrow"></span>
+                    </button>
+                    <ul class="dropdown-content">
+                        <li><a href="">Tomato</a></li>
+                        <li><a href="">Lemongrass</a></li>
+                        <li><a href="">Paprica</a></li>
+                        <li><a href="">Chili</a></li>
+                        <li><a href="">Vanilla</a></li>
+                    </ul>
+                </div>
+                <div class="time-dropdown">
+                    <button class="dropdown-btn" style="margin: 0;">    
+                        <span>Select Time</span>
+                        <span class="arrow"></span>
+                    </button>
+                    <ul class="dropdown-content">
+                        <li><a href="">Last 3 days</a></li>
+                        <li><a href="">Last 1 week</a></li>
+                        <li><a href="">Last 2 week</a></li>
+                        <li><a href="">Last 1 month</a></li>
+                        <li><a href="">All time</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="chart1">
+                <canvas id="1-temp-chart"></canvas>
+            </div>
+            <div class="chart2">
+                <canvas id="1-ph-chart"></canvas>
+            </div>
+        </div>
+
+        <!-- after this was html code for the time chart -->
+        <div class="time-chart">
+            <div class="nav-dropdown">
+                <div class="plant-dropdown">
+                    <button class="dropdown-btn">    
+                        <span>Select Plants</span>
+                        <span class="arrow"></span>
+                    </button>
+                    <ul class="dropdown-content">
+                        <li><a href="">Tomato</a></li>
+                        <li><a href="">Lemongrass</a></li>
+                        <li><a href="">Paprica</a></li>
+                        <li><a href="">Chili</a></li>
+                        <li><a href="">Vanilla</a></li>
+                    </ul>
+                </div>
+                <div class="time-dropdown">
+                    <button class="dropdown-btn" style="margin: 0;">    
+                        <span>Select Time</span>
+                        <span class="arrow"></span>
+                    </button>
+                    <ul class="dropdown-content">
+                        <li><a href="">Last 3 days</a></li>
+                        <li><a href="">Last 1 week</a></li>
+                        <li><a href="">Last 2 week</a></li>
+                        <li><a href="">Last 1 month</a></li>
+                        <li><a href="">All time</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="chart1">
+                <canvas id="2-temp-chart"></canvas>
+            </div>
+            <div class="chart2">
+                <canvas id="2-ph-chart"></canvas>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="btn-1">
+            <a href="Panel-tanaman-SpiceBot.html"><img src="../img/leaf.png" alt=""></a>
+            <hr class="sign-btn">
+        </div>
+        <div class="btn-2">
+            <a href="Spicebot.html.kontrol.panel.html"><img src="../img/home (5).png" alt=""></a>
+            <hr class="hover-btn">
+        </div>
+        <div class="btn-3">
+            <a href="Settings-SpiceBot.html"><img src="../img/setting.png" alt=""></a>
+            <hr class="hover-btn">
+        </div>
+    </div>
+
+    <!-- script for JS -->
+    <script>
+        const xData1 = ["January", "February", "March", "April", "May", "Juny", "July"];
+        const yData1 = [23, 25, 20, 29, 30, 30, 36];
+        const xData2 = ["January", "February", "March", "April", "May", "Juny", "July"];
+        const yData2 = [7, 8, 7, 6.6, 8, 6, 7];
+
+        const y_2Data1 = [25, 27, 22, 30, 31, 28, 29];
+        const y_2Data2 = [5, 4, 6, 7, 4, 8, 7];
+
+        new Chart(document.getElementById("1-temp-chart"), {
+		type : 'line',
+		data : {
+            labels: xData1,
+            datasets: [{
+                data: yData1,
+                label: 'Temp Plants',
+                lineTension: 0.4,
+                borderColor: "rgba(252, 137, 47, 0.8)",
+                fill: false
+            }]
+		},
+		options : {
+            plugins: {
+                legend: {
+                    display: true,
+                    position: 'right',
+                    align: 'end',
+                },
+                scales: {
+                    yAxes: [{ticks: {min: 20, max: 40}}],
+                }
+            }       
+		}
+	});
+        new Chart(document.getElementById("1-ph-chart"), {
+		type : 'line',
+		data : {
+            labels: xData2,
+            datasets: [{
+                data: yData2,
+                label: 'pH Plants',
+                lineTension: 0.4,
+                borderColor: "rgba(250, 210, 36, 0.8)",
+                fill: false
+            }]
+		},
+		options : {
+            plugins: {
+                legend: {
+                    display: true,
+                    position: 'right',
+                    align: 'start'
+                },
+                scales: {
+                    yAxes: [{ticks: {min: 20, max: 40}}],
+                }
+            }       
+		}
+	});
+
+    // this script for 2nd chart for next plants
+        new Chart(document.getElementById("2-temp-chart"), {
+		type : 'line',
+		data : {
+            labels: xData1,
+            datasets: [{
+                data: y_2Data1,
+                label: 'Temp Plants',
+                lineTension: 0.4,
+                borderColor: "rgba(225, 97, 254, 0.8)",
+                fill: false
+            }]
+		},
+		options : {
+            plugins: {
+                legend: {
+                    display: true,
+                    position: 'right',
+                    align: 'end',
+                },
+                scales: {
+                    yAxes: [{ticks: {min: 20, max: 40}}],
+                }
+            }       
+		}
+	});
+        new Chart(document.getElementById("2-ph-chart"), {
+		type : 'line',
+		data : {
+            labels: xData1,
+            datasets: [{
+                data: y_2Data2,
+                label: 'Temp Plants',
+                lineTension: 0.4,
+                borderColor: "rgba(72, 190, 255, 0.8)",
+                fill: false
+            }]
+		},
+		options : {
+            plugins: {
+                legend: {
+                    display: true,
+                    position: 'right',
+                    align: 'start',
+                },
+                scales: {
+                    yAxes: [{ticks: {min: 20, max: 40}}],
+                }
+            }       
+		}
+	});
+    </script>
+</body>
+
+</html>
