@@ -1,0 +1,38 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.background {
+    position: absolute;
+    background-color: #43BDEE;
+    width: 84%;
+    height: 33%;
+    border-radius: 0px 0px 50px 0px;
+    top: 0;
+    left: 0;
+}
+
+.title {
+    position: relative;
+    padding: 20px 40px;
+}
+
+.title h3 {
+    margin: 0;
+    margin-top: 20px;
+}
+
+.main-title {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.main-title a{
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    background-color: black;
+    border-radius: 8px;
+}
